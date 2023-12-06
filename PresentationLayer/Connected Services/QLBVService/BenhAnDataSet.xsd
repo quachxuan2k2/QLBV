@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/BenhAnDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/BenhAnDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/BenhAnDataSet.xsd" id="BenhAnDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="BenhAnDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BenhNhan">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="HoTenBenhNhan" type="xs:string" />
+              <xs:element minOccurs="0" name="NgaySinh" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="GioiTinh" type="xs:string" />
+              <xs:element minOccurs="0" name="HoTenBacSi" type="xs:string" />
+              <xs:element minOccurs="0" name="TenDV" type="xs:string" />
+              <xs:element minOccurs="0" name="AnhChup" type="xs:base64Binary" />
+              <xs:element minOccurs="0" name="KetLuan" type="xs:string" />
+              <xs:element minOccurs="0" name="DiaChi" type="xs:string" />
+              <xs:element minOccurs="0" name="Gia" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DonThuoc">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="TenThuoc" type="xs:string" />
+              <xs:element minOccurs="0" name="SoLuong" type="xs:short" />
+              <xs:element minOccurs="0" name="GiaBan" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ThanhTien" type="xs:decimal" />
+              <xs:element minOccurs="0" name="LieuDung" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
